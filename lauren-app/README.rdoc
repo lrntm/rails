@@ -1,4 +1,19 @@
 == README
 
-= MEETUPS 
-I would like to attend The Point of Prototyping, http://www.designersandgeeks.com/events/point-of-prototyping?utm_source=prototyping_meetup&utm_medium=meetup&utm_campaign=prototyping_nyc
+=== HW 1: MEETUPS 
+I would like to attend The Point of Prototyping, http://bit.ly/1VhTRhM
+
+=== HW 3: SCHEMA
+I created three models: the Human, the Dog, and the FavoriteToy
+The human class has two fields: a string name and an integer numOfDogs.
+The dog class has four: string name, string breed, string color, and integer age. 
+The favorite toy class has two: string name and string type. 
+
+The human has_and_belongs_to_many dogs
+The dog has_one human, has_and_belongs_to_many dogs (friends), and and embeds_one favorite toy. 
+THe favorite toy is embedded_in dog. 
+
+I added myself and my dog into the database. 
+=> #<Dog _id: 5608b753d78ccf04da000000, dog_ids: nil, name: "Bogart", breed: "labradoodle", color: "black", age: 6> 
+=> #<Human _id: 5608b7bdd78ccf04da000001, dog_ids: nil, name: "Lauren", numOfDogs: 1> 
+=> #<FavoriteToy _id: 5608b7e0d78ccf04da000002, name: "Ball", type: "ball"> 
