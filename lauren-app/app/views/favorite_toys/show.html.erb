@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @favorite_toy.name %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @favorite_toy.type %>
+</p>
+
+<%= link_to 'Edit', edit_favorite_toy_path(@favorite_toy) %> |
+<%= link_to 'Back', favorite_toys_path %>
