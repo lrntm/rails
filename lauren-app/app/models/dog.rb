@@ -1,7 +1,7 @@
 class Dog
   include Mongoid::Document
 
-  has_one :human
+  has_one :human, inverse_of :human
   has_and_belongs_to_many :dogs
   embeds_one :favorite_toy
 

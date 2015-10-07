@@ -14,6 +14,9 @@ The dog has_one human, has_and_belongs_to_many dogs (friends), and and embeds_on
 THe favorite toy is embedded_in dog. 
 
 I added myself and my dog into the database. 
+
 #<Dog _id: 5608b753d78ccf04da000000, dog_ids: nil, name: "Bogart", breed: "labradoodle", color: "black", age: 6> 
+
 #<Human _id: 5608b7bdd78ccf04da000001, dog_ids: nil, name: "Lauren", numOfDogs: 1> 
+
 #<FavoriteToy _id: 5608b7e0d78ccf04da000002, name: "Ball", type: "ball"> 
